@@ -1,0 +1,16 @@
+
+RewriteEngine ON
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+RewriteRule ^acceuil$ index.php
+RewriteRule ^{0]$ index.php
+RewriteRule ^add$ controller/add.php
+RewriteRule ^delete$ controller/delete.php
+RewriteRule ^database$ controller/database.php
+RewriteRule ^edite$ controller/edite.php
+RewriteRule ^index$ controller/index.php
+RewriteRule ^update$ controller/update.php
+RewriteRule ^index$ index.php
